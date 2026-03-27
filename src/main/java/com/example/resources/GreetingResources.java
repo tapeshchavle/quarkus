@@ -2,9 +2,7 @@ package com.example.resources;
 
 import com.example.dto.UserDTO;
 import io.vertx.ext.auth.User;
-import jakarta.ws.rs.GET;
-import jakarta.ws.rs.Path;
-import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 
 import java.util.ArrayList;
@@ -30,6 +28,15 @@ public class GreetingResources {
                 .age(20)
                 .location("Bhopal")
                 .build();
+    }
+
+    @Path("/adduser")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    @POST
+    public UserDTO addUser(UserDTO userDTO){
+        System.out.print(userDTO);
+        return userDTO;
     }
 
 
