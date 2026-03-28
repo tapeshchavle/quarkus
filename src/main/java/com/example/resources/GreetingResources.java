@@ -15,7 +15,7 @@ public class GreetingResources {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Map<String, Integer> hello(){
-        return Map.of("A", 1, "B", 2, "C", 3);
+        return Map.of("A", 1, "B", 2);
     }
 
     @Path("/user")
