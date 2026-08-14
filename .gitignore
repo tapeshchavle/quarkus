@@ -36,7 +36,6 @@ nb-configuration.xml
 *.rej
 
 # Local environment
-.env
 
 # Plugin directory
 /.quarkus/cli/plugins/
@@ -46,3 +45,5 @@ branch_structure.json
 temp_auto_push.bat
 temp_interactive_push.bat
 .gitignore
+config.bat
+node_modules
